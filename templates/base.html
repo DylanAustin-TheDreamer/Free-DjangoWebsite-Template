@@ -14,14 +14,15 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
   </head>
 
   <body>
-    <header class="bg-body-tertiary">
+    <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+            <a class="navbar-brand" href="{% url 'home' %}">My <em style="color: rgb(112, 165, 98);">Django</em> App</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -65,9 +66,9 @@
       </div>
     </main>
 
-    <footer class="bg-body-tertiary">
-      <div class="container bg-body-tertiary">
-        <p class="text-center py-3 mb-0">© 2024 Your Company</p>
+    <footer>
+      <div class="container">
+        <p class="text-center py-3 mb-0">© 2024 Your <em style="color: rgb(112, 165, 98);">Django</em> Company</p>
       </div>
     </footer>
 
@@ -77,5 +78,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>
